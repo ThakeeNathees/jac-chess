@@ -1,3 +1,8 @@
+
+# Jaclang generated files
+*/.jac_mypy_cache/
+*/__jac_gen__/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
