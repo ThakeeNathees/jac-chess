@@ -1,4 +1,6 @@
 import:py pygame;
+import:py chess;
+
 import from .engine { Engine }
 import from .board { Board }
 
@@ -11,6 +13,11 @@ obj Game {
     has engine: Engine;
     has board: Board;
     has screen: pygame.Surface;
+
+    # Game state.
+    has white_to_move: bool;
+    has dragged_square: tuple;
+    has legal_target_squares: List[tuple];
 
     can init(stockfish_path:str);
     can handle_events();
